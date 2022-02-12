@@ -6,8 +6,8 @@ for(let key of keys){
       let keypressed = key.innerText;
       console.log(keypressed);
       if(keypressed == "="){
-        resultUpdate(equation);
-        equation = "";
+        equation = resultUpdate(equation);
+
         equationUpdate(equation);
       }
       else if(keypressed == ""){
@@ -31,4 +31,5 @@ function equationUpdate(e){
 function resultUpdate(e){
     let result  = eval(e);
     document.getElementById("display").innerText = result;
+    return result;
 }
