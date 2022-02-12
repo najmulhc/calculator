@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator | a Javascript Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="min-h-full min-w-full bg-slate-300 " >
+    <main class="h-screen  flex items-center justify-center ">
+        <!-- display of the calculator  -->
+        <div class="p-4 bg-zinc-800 rounded-xl drop-shadow-lg" id="calculatorbody">
+            <h3 class="text-3xl text-cyan-600 font-bold ">CASIO</h3>
+           <div class="bg-cyan-50 my-4 p-2 min-h-8 rounded-md">
+            <h4 class="w-80 text-right text-xl text-cyan-900" id="equationDisplay"></h4>
+            <h4 class="text-right text-6xl text-cyan-900" id="display">0</h4>
+           </div>
+           <!-- grid starts  -->
+           <div class="grid grid-cols-4 grid-rows-5">
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">C</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">%</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">/</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">1</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">2</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">3</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">*</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">4</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">5</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">6</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">-</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">7</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">8</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">9</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">+</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg col-span-2 m-2">0</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">.</button>
+                <button class="bg-cyan-600 key text-white text-lg px-3 py-4 rounded-lg m-2">=</button>
+           </div>
+        </div>
+     
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
