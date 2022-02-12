@@ -4,7 +4,6 @@ let keys =  document.getElementsByClassName("key");
 for(let key of keys){
     key.addEventListener("click", function(){
       let keypressed = key.innerText;
-      console.log(keypressed);
       if(keypressed == "="){
         equation = resultUpdate(equation);
 
